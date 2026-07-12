@@ -1,0 +1,811 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Task 1"
+      ],
+      "metadata": {
+        "id": "fL5KIgkAaBhN"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Performance Analysis"
+      ],
+      "metadata": {
+        "id": "RJJfp1w4aHuK"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "nhBKUQ5kcaiS"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num_list = [12, 7, 9, 15, 6, 10] #number of goals scored by a player in different matches"
+      ],
+      "metadata": {
+        "id": "Nl6zN8tHaZP-"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(num_list)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nikmIynZbt_G",
+        "outputId": "9bf68e61-d597-489e-d107-efd58511ecfb"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[12, 7, 9, 15, 6, 10]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "sum(num_list) #summation of total goals scored"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-C_DpMfXccKy",
+        "outputId": "4c8e0696-e605-44dd-fa95-4feed4d63b9f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "59"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 3
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "max(num_list) #highest goal scored"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IoFymZ8QdfTK",
+        "outputId": "7ea22d19-59af-43d7-cb1b-bccc12cd0c91"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "15"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 4
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "min(num_list) #lowest goal scored"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2pKVo0ZCd3pf",
+        "outputId": "8d829e10-e072-42d8-9d08-ef3892430326"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "6"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 5
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print (max(num_list) - min(num_list)) #difference between the highest and lowest goals scored in the match"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4BOoAcS2fs7S",
+        "outputId": "1f2f587e-e10a-406f-c002-d1d6a4ba474e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "9\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "len(num_list)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ReA401FBgrFk",
+        "outputId": "12e4168e-c167-4f55-d54e-559d9d4ef512"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "6"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 7
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Avg = sum(num_list)/len(num_list) #average goal scored per match"
+      ],
+      "metadata": {
+        "id": "O5bok4RAjKqD"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(Avg)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mzcjb3Bgj003",
+        "outputId": "c0d70788-46c8-4789-9082-ff40bc7b7b4b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "9.833333333333334\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#to add a new match"
+      ],
+      "metadata": {
+        "id": "a8krC2uusK-J"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num_list.append(11)"
+      ],
+      "metadata": {
+        "id": "uaL8SoCOsiJR"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(num_list)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eNDuf8I8t_WS",
+        "outputId": "fc00b40a-bebf-4ddc-edd6-6bb68762c45f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[12, 7, 9, 15, 6, 10, 11]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#to remove the lowest scoring match from the list"
+      ],
+      "metadata": {
+        "id": "RWo3LtPqvIir"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num_list.remove(min(num_list))"
+      ],
+      "metadata": {
+        "id": "jZG70yeXvmxC"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(num_list)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YWpZpDLqv_Gd",
+        "outputId": "636a2127-60b2-425b-ca82-5b8bf327d735"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[12, 7, 9, 15, 10, 11]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(num_list) #final updated list of performance data"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fSQDIb1S4eiE",
+        "outputId": "73bb89d9-fecc-4671-e614-e53914e335b4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[12, 7, 9, 15, 10, 11]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## TASK 2 - BANK TRANSACTION RECORD  "
+      ],
+      "metadata": {
+        "id": "fP4XaLILwyLV"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "bank_list = [5000, 12000, 7500, 3000, 9000] #bank account records of daily transactions"
+      ],
+      "metadata": {
+        "id": "l3WTjr-5xNjU"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(bank_list)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2VvtZRjMzfMi",
+        "outputId": "c8db8b10-eca8-472f-9de1-f15e2be42258"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[5000, 12000, 7500, 3000, 9000]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "sum(bank_list) ##total amount deposited"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SDivUCQXz41I",
+        "outputId": "b12c52c9-e87b-4f89-ec56-3f4771223c4b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "36500"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 19
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "max(bank_list) #highest amount deposited"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HiWz13Kj0ep0",
+        "outputId": "c98eb335-e15b-4839-f4dc-e5522501dbfd"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "12000"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 20
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "min(bank_list) #lowest amount deposited"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "z9-0Fj_C1AHB",
+        "outputId": "734d263b-7274-419c-bc90-0ee9093ef771"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "3000"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 21
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#to add a new deposit\n",
+        "\n",
+        "bank_list.append(6500)"
+      ],
+      "metadata": {
+        "id": "8t5vHCKZ1c3h"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(bank_list)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jZumubob2cB1",
+        "outputId": "c9d9c9a5-43b9-4578-f6b2-ade0778dbd79"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[5000, 12000, 7500, 3000, 9000, 6500]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "bank_list.remove(min(bank_list)) #to remove the smallest deposit from the list"
+      ],
+      "metadata": {
+        "id": "cqwMA26t20ZS"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(bank_list)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5A4CQQAv3cg0",
+        "outputId": "5c368a17-44d3-4409-bab0-39da6f3c2c9f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[5000, 12000, 7500, 9000, 6500]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(bank_list) #final updated list of transaction"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qBC0adOx3tFb",
+        "outputId": "b9fc7ad8-3e17-4600-c044-6322a4cd314f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[5000, 12000, 7500, 9000, 6500]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## TASK 3 - CPU TEMPERATURE MONITORING SSYSTEM"
+      ],
+      "metadata": {
+        "id": "nWLSW8lK5TZX"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num_tuple = (45, 50, 55, 48, 52) #CPU temperature reading during operation"
+      ],
+      "metadata": {
+        "id": "ly8PlssH59AG"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num_tuple[0] #first temperature reading"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jlRZLSXa_oZ6",
+        "outputId": "8bf7462b-cd3b-414d-b05e-9c5c7eb47572"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "45"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 28
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num_tuple[-1] #last temperature reading"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "T9AAXe0EAE1N",
+        "outputId": "20092e96-4cbd-4327-b50e-e9c23b6b77d3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "52"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 29
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "max(num_tuple) #highest temperature"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "w56hRHnnAmgg",
+        "outputId": "05937973-6f6b-43ba-cec0-6e49a6b9e9b6"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "55"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 30
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "min(num_tuple) #lowest temperature"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-EXs-amQA7Wy",
+        "outputId": "2b111f1c-90ae-404b-c105-a3f4d710e360"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "45"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 31
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(max(num_tuple) - min(num_tuple)) #difference between the highest and lowest temperature"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dhvBTPtRBoTP",
+        "outputId": "26a0f200-1dad-4a5b-97df-93e4c69b5e02"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "sum(num_tuple)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OfH7NnLJEDrD",
+        "outputId": "7989ef03-3e05-46a7-f9b0-a8dc0a7d2194"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "250"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 33
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "len(num_tuple)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "a6O8-QmfEuzR",
+        "outputId": "658e0749-4481-4381-8eee-6360ab836fc4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "5"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 34
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#to find the average CPU temperature\n",
+        "\n",
+        "avg = sum(num_tuple)/len(num_tuple)"
+      ],
+      "metadata": {
+        "id": "4fn4GdGXE_Rs"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(avg)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "B9tsVhhiF-LH",
+        "outputId": "61a6cd45-11a4-44b0-cf6f-42119909263a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "50.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# A tuple is more suitable than a list for storing CPU temperature data because it is immutable and contains dataset fixed for usage"
+      ],
+      "metadata": {
+        "id": "_GrV4ISpKO9w"
+      }
+    }
+  ]
+}
